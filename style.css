@@ -126,9 +126,21 @@ main {
 #calculator__display {
   background-color: var(--color-display);
   color: var(--color-display-text);
+  margin-top: .5rem;
   padding: .5rem 1rem;
+  position: relative;
   text-align: right;
   width: 100%;
+}
+#calculator__previous {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: .5rem;
+}
+#calculator__value {
+  font-size: inherit;
+  margin-top: 1.5rem;
 }
 #calculator__keys {
   display: grid;
@@ -144,12 +156,13 @@ main {
   border: 2px solid var(--color-key-border);
   border-radius: .5rem;
   font-size: inherit;
-  padding: 0;
-  width: 100%;
+  height: 4rem;
+  width: 4rem;
 }
-#calculator__clear,
-#calculator__delete {
+#calculator__keys button[data-action="clear"],
+#calculator__keys button[data-action="delete"] {
   grid-column: auto / span 2;
+  width: 8.5rem;
 }
 footer {
   background-color: var(--color-blank);

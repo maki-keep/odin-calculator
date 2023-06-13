@@ -9,7 +9,7 @@
 <meta name="description" content="Calculator" />
 <link href="./reset.css" rel="stylesheet" />
 <link href="./style.css" rel="stylesheet" />
-<script defer src="./index.js"></script>
+<script defer src="./index.js" type="module"></script>
 
 </head>
 <body>
@@ -23,27 +23,28 @@
         </section>
         <div id="calculator">
           <div id="calculator__display">
-            <span id="calculator__value">0</span>
+            <p id="calculator__previous"></p>
+            <p id="calculator__value"></p>
           </div>
           <div id="calculator__keys">
-            <button id="calculator__clear">C</button>
-            <button id="calculator__delete">&leftarrow;</button>
-            <button id="calculator__7">7</button>
-            <button id="calculator__8">8</button>
-            <button id="calculator__9">9</button>
-            <button id="calculator__divide">&div;</button>
-            <button id="calculator__4">4</button>
-            <button id="calculator__5">5</button>
-            <button id="calculator__6">6</button>
-            <button id="calculator__multiply">&times;</button>
-            <button id="calculator__1">1</button>
-            <button id="calculator__2">2</button>
-            <button id="calculator__3">3</button>
-            <button id="calculator__subtract">-</button>
-            <button id="calculator__decimal">.</button>
-            <button id="calculator__0">0</button>
-            <button id="calculator__equal">=</button>
-            <button id="calculator__add">+</button>
+            <button data-action="clear">C</button>
+            <button data-action="delete">&leftarrow;</button>
+            <button data-action="7">7</button>
+            <button data-action="8">8</button>
+            <button data-action="9">9</button>
+            <button data-action="divide">&div;</button>
+            <button data-action="4">4</button>
+            <button data-action="5">5</button>
+            <button data-action="6">6</button>
+            <button data-action="multiply">&times;</button>
+            <button data-action="1">1</button>
+            <button data-action="2">2</button>
+            <button data-action="3">3</button>
+            <button data-action="subtract">-</button>
+            <button data-action="decimal">.</button>
+            <button data-action="0">0</button>
+            <button data-action="equal">=</button>
+            <button data-action="add">+</button>
           </div>
         </div>
       </div>
